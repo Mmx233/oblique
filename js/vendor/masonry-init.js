@@ -56,7 +56,7 @@ Masonry.prototype._getItemLayoutPosition = function(item) {
 	var colSpan = Math[mathMethod](item.size.outerWidth / this.columnWidth);
 	colSpan = Math.min( colSpan, this.cols );
 
-	var colGroup = this._getColGroup( colSpan );
+	var colGroup = this._getTopColGroup( colSpan );
 	// get the minimum Y value from the columns
 	// var minimumY = Math.min.apply( Math, colGroup );
 	// var shortColIndex = colGroup.indexOf( minimumY );
